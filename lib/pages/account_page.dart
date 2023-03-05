@@ -80,7 +80,7 @@ class _AccountPageState extends State<AccountPage> {
                   leading: const Icon(Icons.info_outline),
                   title: const Text('Update information'),
                   onTap: (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const ChangeInfoPage()));
+                    nextScreen(context, ChangeInfoPage());
                   },
                 ),
                 ListTile(
@@ -90,7 +90,7 @@ class _AccountPageState extends State<AccountPage> {
                   leading: const Icon(Icons.key),
                   title: const Text('Change password'),
                   onTap: (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const ChangePasswordPage()));
+                    nextScreen(context, ChangePasswordPage());
                   },
                 ),
                 ListTile(
